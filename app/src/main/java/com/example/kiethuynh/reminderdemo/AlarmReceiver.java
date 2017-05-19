@@ -33,7 +33,8 @@ public class AlarmReceiver extends BroadcastReceiver {
                         .setContentTitle("My notification")
                         .setContentText("Hello World!")
                         .setContentIntent(resultPendingIntent)
-                .setDefaults(Notification.DEFAULT_SOUND | Notification.DEFAULT_VIBRATE);
+                        .setAutoCancel(true)
+                        .setDefaults(Notification.DEFAULT_SOUND | Notification.DEFAULT_VIBRATE);
 
         int mNotificationId = 001;
         NotificationManager mNotifyMgr =
