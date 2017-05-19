@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kiethuynh.reminderdemo.MainActivity">
+
+    <EditText
+        android:id="@+id/edt_hour"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="hour"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edt_minute"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="minute"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Alarm" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_alarm"/>
+
+</LinearLayout>
